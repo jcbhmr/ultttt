@@ -27,12 +27,12 @@ class TicTacToe:
     @property
     def winner(self) -> typing.Literal["X"] | typing.Literal["O"] | None:
         for i in range(3):
-            if self.grid[i][0] == self.grid[i][1] == self.grid[i][2] != None:
+            if self.grid[i][0] == self.grid[i][1] == self.grid[i][2] is not None:
                 return self.grid[i][0]
-            if self.grid[0][i] == self.grid[1][i] == self.grid[2][i] != None:
+            if self.grid[0][i] == self.grid[1][i] == self.grid[2][i] is not None:
                 return self.grid[0][i]
-        if self.grid[0][0] == self.grid[1][1] == self.grid[2][2] != None:
+        if self.grid[0][0] == self.grid[1][1] == self.grid[2][2] is not None:
             return self.grid[0][0]
-        if self.grid[0][2] == self.grid[1][1] == self.grid[2][0] != None:
+        if self.grid[0][2] == self.grid[1][1] == self.grid[2][0] is not None:
             return self.grid[0][2]
         return None

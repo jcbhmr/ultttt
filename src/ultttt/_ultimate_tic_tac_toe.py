@@ -43,12 +43,12 @@ class UltimateTicTacToe:
     @property
     def winner(self) -> typing.Literal["X"] | typing.Literal["O"] | None:
         for i in range(3):
-            if self.grid[i][0].winner == self.grid[i][1].winner == self.grid[i][2].winner != None:
+            if self.grid[i][0].winner == self.grid[i][1].winner == self.grid[i][2].winner is not None:
                 return self.grid[i][0].winner
-            if self.grid[0][i].winner == self.grid[1][i].winner == self.grid[2][i].winner != None:
+            if self.grid[0][i].winner == self.grid[1][i].winner == self.grid[2][i].winner is not None:
                 return self.grid[0][i].winner
-        if self.grid[0][0].winner == self.grid[1][1].winner == self.grid[2][2].winner != None:
+        if self.grid[0][0].winner == self.grid[1][1].winner == self.grid[2][2].winner is not None:
             return self.grid[0][0].winner
-        if self.grid[0][2].winner == self.grid[1][1].winner == self.grid[2][0].winner != None:
+        if self.grid[0][2].winner == self.grid[1][1].winner == self.grid[2][0].winner is not None:
             return self.grid[0][2].winner
         return None

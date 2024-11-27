@@ -18,17 +18,6 @@
 
 The best way to install this application is to download the platform-specific precompiled binary from [the latest release](https://github.com/jcbhmr/ultttt/releases/latest).
 
-<dl>
-<dt>Windows x86-64
-<dd>https://github.com/jcbhmr/ultttt/releases/latest/download/ultttt-win_amd64.zip
-<dt>macOS x86-64
-<dd>https://github.com/jcbhmr/ultttt/releases/latest/download/ultttt-win_amd64.zip
-<dt>macOS AArch64
-<dd>https://github.com/jcbhmr/ultttt/releases/latest/download/ultttt-win_amd64.zip
-<dt>Linux x86-64
-<dd>https://github.com/jcbhmr/ultttt/releases/latest/download/ultttt-win_amd64.zip
-</dl>
-
 This package is also published to PyPI if you prefer to install it from there:
 
 ```sh

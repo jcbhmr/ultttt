@@ -1,6 +1,6 @@
 [project]
 name = "ultttt"
-version = "0.1.0"
+version = "1.0.0"
 authors = [{ name = "Jacob Hummer", email = "jcbhmr@outlook.com" }]
 description = "♟️ Ultimate tic-tac-toe game GUI application using Python and PyGame"
 readme = "README.md"

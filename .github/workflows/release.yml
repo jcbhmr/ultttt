@@ -1,9 +1,6 @@
 name: Create release
 on:
   workflow_dispatch:
-    inputs:
-      draft:
-        type: boolean
 jobs:
   pyinstaller:
     uses: ./.github/workflows/pyinstaller.yml
@@ -50,7 +47,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
         run: |
           gh release create "v$version" \
-            ${{ (inputs.draft && '--draft') || '' }} \
+            --draft \
             --generate-notes \
             ultttt-linux_x86_64-$version.tar.gz \
             ultttt-macosx_10_9_x86_64-$version.tar.gz \

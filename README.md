@@ -18,6 +18,8 @@
 
 The best way to install this application is to download the platform-specific precompiled binary from [the latest release](https://github.com/jcbhmr/ultttt/releases/latest).
 
+**https://github.com/jcbhmr/ultttt/releases/latest**
+
 This package is also published to PyPI if you prefer to install it from there:
 
 ```sh

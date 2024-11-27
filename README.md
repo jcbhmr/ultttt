@@ -9,7 +9,6 @@
 🎨 Has a GUI! \
 🤖 Uses GitHub Actions to produce PyInstaller binaries \
 🏫 Made for UW-Whitewater Introduction to Python Programming final project \
-✅ Actually _works_ \
 🧠 Learned about [uv](https://docs.astral.sh/uv/)
 
 ## Installation

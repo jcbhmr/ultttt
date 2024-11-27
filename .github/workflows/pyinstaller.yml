@@ -13,7 +13,18 @@ on:
   workflow_call:
   workflow_dispatch:
 jobs:
+  version:
+    outputs:
+      version: ${{ steps.version.outputs.result }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: version
+        uses: mikefarah/yq@master
+        with:
+          cmd: yq '.project.version' 'pyproject.toml'
   pyinstaller:
+    needs: version
     strategy:
       fail-fast: false
       matrix:
@@ -37,12 +48,8 @@ jobs:
         with:
           version: "latest"
       - run: uv run poe build-exe
-      - id: version
-        uses: mikefarah/yq@master
-        with:
-          cmd: yq '.project.version' 'pyproject.toml'
       - env:
-          version: ${{ steps.version.outputs.result }}
+          version: ${{ needs.version.outputs.version }}
           target: ${{ matrix.target }}
         run: |
           mkdir stage

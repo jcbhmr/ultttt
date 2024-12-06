@@ -6,6 +6,12 @@
   <img src="https://github.com/user-attachments/assets/c6fd92b5-f10a-4507-8627-4acdddd829ba">
 </p>
 
+<p align=center>
+  <a href="https://github.com/jcbhmr/ultttt/blob/main/py%20project%20prop.pdf">Project proposal</a>
+  | <a href="https://github.com/jcbhmr/ultttt/blob/main/py%20proj%20pres.pdf">Presentation PDF</a>
+  | <a href="https://www.youtube.com/watch?v=NhmhWXjxfqU">Presentation video</a>
+</p>
+
 🎨 Has a GUI! \
 🤖 Uses GitHub Actions to produce PyInstaller binaries \
 🏫 Made for UW-Whitewater Introduction to Python Programming final project \

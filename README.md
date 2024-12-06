@@ -35,6 +35,13 @@ This package is also published to PyPI if you prefer to install it from there:
 uv tool install ultttt
 ```
 
+## Presentation
+
+We were tasked with making a presentation describing the code to submit in addition to just the code.
+
+[![image](https://github.com/user-attachments/assets/fc0f6925-eb26-4ebb-8906-4cea344e486b)](https://www.youtube.com/watch?v=NhmhWXjxfqU)
+[ultttt presentation & demo | YouTube](https://www.youtube.com/watch?v=NhmhWXjxfqU)
+
 ## Development
 
 ![Python](https://img.shields.io/static/v1?style=for-the-badge&message=Python&color=3776AB&logo=Python&logoColor=FFFFFF&label=)
